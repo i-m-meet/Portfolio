@@ -1,4 +1,5 @@
 import Hero from "./components/heroSection/Hero";
+import SubHeroSection from "./components/heroSection/SubHeroSection";
 import Navbar from "./components/navbar/Navbar";
 
 const App = () =>{
@@ -6,6 +7,8 @@ const App = () =>{
     <main className="font-josefin-sans ">
       <Navbar/>
       <Hero/>
+      <SubHeroSection/>
+
     </main>
   );
 }
