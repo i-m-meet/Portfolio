@@ -32,3 +32,19 @@
   --breakpoint-xl: 80rem;      /* 1280px */
   --breakpoint-2xl: 96rem;     /* 1536px */
 }
+
+@theme{
+  --shadow-md-cyan: 10px 10px 200px 150px rgba(94,206,220,0.5);
+  --shadow-md-orange: 10px 10px 200px 150px rgba(240,169,79,0.5);
+}
+
+.btn-shadow{
+  box-shadow: 0 0 20px 0 (var(--color-cyan));
+}
+
+.cyan-shadow-mid{
+  box-shadow: 10px 10px 200px 150px rgba(94,206,220,0.5)
+}
+.orange-shadow-mid{
+  box-shadow: 10px 10px 200px 150px rgba(240,169,79,0.5)
+}
