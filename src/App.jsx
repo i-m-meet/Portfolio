@@ -1,9 +1,10 @@
+import Navbar from "./components/navbar/Navbar";
 
 const App = () =>{
   return (
-    <div>
-
-    </div>
+    <main className="font-josefin-sans ">
+      <Navbar/>
+    </main>
   );
 }
 
