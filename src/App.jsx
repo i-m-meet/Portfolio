@@ -4,6 +4,7 @@ import HelperSection from "./components/HelperSection";
 import Hero from "./components/heroSection/Hero";
 import SubHeroSection from "./components/heroSection/SubHeroSection";
 import Navbar from "./components/navbar/Navbar";
+import Projects from "./components/projects/Projects";
 import Skills from "./components/skillsSection/Skills";
 import SubSkills from "./components/skillsSection/SubSkills";
 
@@ -17,6 +18,7 @@ const App = () =>{
       <Skills/>
       <SubSkills/>
       <Experience/>
+      <Projects/>
       <HelperSection/>
     </main>
   );

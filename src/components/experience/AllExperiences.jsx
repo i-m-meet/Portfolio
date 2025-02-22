@@ -24,7 +24,7 @@ const experiencesList = [
   },
   {
     job: "Frontend Developer",
-    company: " Student - Mobile Solutions Development",
+    company: " Independent Developer",
     date: "2025- Present",
     responsibilities: [
       "Built responsive websites that fetch and display data from APIs with dynamic UI/UX.",
