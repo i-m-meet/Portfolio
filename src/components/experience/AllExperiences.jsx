@@ -1,5 +1,7 @@
 import SingleExeperience from "./SingleExeperience";
 import { FaArrowRight } from "react-icons/fa";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../framerMotion/Vaariants";
 
 const experiencesList = [
   {
@@ -35,18 +37,28 @@ const experiencesList = [
 ];
 
 const AllExperiences = () => {
-  return <div className="flex md:flex-row sm:flex-col items-center justify-between">
-    {
-      experiencesList.map((experience,index) =>{
-        return(
+  return (
+    <div className="flex items-center justify-between sm:flex-col md:flex-row">
+      {experiencesList.map((experience, index) => {
+        return (
           <>
-          <SingleExeperience key={index} experience={experience} />
-          {index< 2 ? <FaArrowRight className=" text-6xl text-orange lg:block sm:hidden"/>: ""}
+            <SingleExeperience key={index} experience={experience} />
+            {index < 2 ? (
+              <motion.div
+              variants={fadeIn("right", 0.2)}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: false, amount: 0 }}>
+              <FaArrowRight className="text-orange text-6xl sm:hidden lg:block" />
+              </motion.div>
+            ) : (
+              ""
+            )}
           </>
-        )
-      })
-    }
-  </div>;
+        );
+      })}
+    </div>
+  );
 };
 
 export default AllExperiences;

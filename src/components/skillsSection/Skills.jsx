@@ -1,16 +1,28 @@
 import AllSkills from "./AllSkills";
 import AllSkillsSM from "./AllSkillsSM";
 import SkillsText from "./SkillsText";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../framerMotion/Vaariants";
 
 const Skills = () => {
   return (
     <div id="skills">
-      <div className="max-w-[1200px] px-4 mx-auto min-h-[600px] relative overflow-hidden">
-        <SkillsText />
-        <div className="bottom-[50px] absolute left-[50%] -translate-x-[50%] lg-block md:block sm:hidden">
+      <div className="relative mx-auto min-h-[600px] max-w-[1200px] overflow-hidden px-4">
+        <motion.div
+          variants={fadeIn("down", 0.2)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: false, amount: 0 }}
+        >
+          <SkillsText />
+        </motion.div>
+        <div className="lg-block absolute bottom-[50px] left-[50%] -translate-x-[50%] sm:hidden md:block">
           <AllSkills />
         </div>
-        <div className="sm:block md:hidden lg:hidden"> <AllSkillsSM/></div>
+        <div className="sm:block md:hidden lg:hidden">
+          {" "}
+          <AllSkillsSM />
+        </div>
       </div>
     </div>
   );
