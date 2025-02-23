@@ -1,7 +1,8 @@
 import About from "./components/about/About";
 import ContactMe from "./components/contact-me/ContactMe";
 import Experience from "./components/experience/Experience";
-import HelperSection from "./components/HelperSection";
+import Footer from "./components/footer/Footer";
+// import HelperSection from "./components/HelperSection";
 import Hero from "./components/heroSection/Hero";
 import SubHeroSection from "./components/heroSection/SubHeroSection";
 import Navbar from "./components/navbar/Navbar";
@@ -21,7 +22,8 @@ const App = () =>{
       <Experience/>
       <Projects/>
       <ContactMe/>
-      <HelperSection/>
+      <Footer/>
+      {/* <HelperSection/> */}
     </main>
   );
 }
