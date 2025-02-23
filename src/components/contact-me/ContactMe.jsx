@@ -3,12 +3,15 @@ import ContactMeRight from "./ContactMeRight";
 
 const ContactMe = () => {
   return (
-    <div id="contaxt" className="max-w-[1200px] mx-auto items-center justify-center mt-[100px] px-4">
-       <h2 className="text-6xl text-cyan mb-10 text-center">Contact Me</h2>
-        <div className="flex justify-between gap-24 bg-brown p-8 rounded:2xl lg:flex-row sm:flex-col">
-      <ContactMeLeft />
-      <ContactMeRight />
-        </div>
+    <div
+      id="contact"
+      className="mx-auto mt-[100px] max-w-[1200px] items-center justify-center px-4"
+    >
+      <h2 className="text-cyan mb-10 text-center text-6xl">Contact Me</h2>
+      <div className="bg-brown rounded:2xl flex justify-between gap-24 p-8 sm:flex-col lg:flex-row">
+        <ContactMeLeft />
+        <ContactMeRight />
+      </div>
     </div>
   );
 };

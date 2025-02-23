@@ -27,7 +27,7 @@ const projectsList = [
 
 const Projects = () => {
   return (
-    <div id="prpojects" className="max-w-[1200px] mx-auto px-4">
+    <div id="projects" className="max-w-[1200px] mx-auto px-4">
       <ProjectsText />
       <div className="flex flex-col gap-20 max-w[900px] mx-auto mt-12 ">
         {projectsList.map((project, index) => {
