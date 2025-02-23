@@ -2,7 +2,7 @@
 const NavbarLogo = () =>{
   return (
     <div>
-        <h1 className="text-white  text-2xl sm:text-xl md:block">
+        <h1 className="text-white font-extrabold text-3xl md:block">
             Sumeet
         </h1>
     </div>

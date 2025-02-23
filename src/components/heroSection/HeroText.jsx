@@ -29,7 +29,8 @@ const HeroText = () => {
         viewport={{ once: false, amount: 0 }}
         className="mt-4 text-lg text-white"
       >
-        A Passionate Web Developer <br />
+        A Passionate Web Developer dedicated to building <br/>
+         responsive and dynamic web applications
       </motion.p>
     </div>
   );

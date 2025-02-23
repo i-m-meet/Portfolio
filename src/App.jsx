@@ -12,7 +12,7 @@ import SubSkills from "./components/skillsSection/SubSkills";
 
 const App = () =>{
   return (
-    <main className="font-josefin-sans ">
+    <main className="font-josefin-sans text-white relative cursor-default overflow-x-hidden">
       <Navbar/>
       <Hero/>
       <SubHeroSection/>

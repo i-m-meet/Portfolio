@@ -25,7 +25,7 @@ const ContactForm = () => {
 
     emailjs
       .sendForm("service_1ndabos", "template_zw5aaym", form.current, {
-        publicKey: "Zvy1PqdIt1mJfZyQw",
+        publicKey: "WxS2DzRzTwFxuV_Zx",
       })
       .then(
         () => {
