@@ -1,31 +1,23 @@
-import { useState } from "react";
-import NavbarBtn from "./NavbarBtn";
-import NavbarLinks from "./NavbarLinks";
 import NavbarLogo from "./NavbarLogo";
-import { GiHamburgerMenu } from "react-icons/gi";
+import NavbarLinks from "./NavbarLinks";
+import NavbarBtn from "./NavbarBtn";
+import NavbarToggler from "./NavbarToggler";
+import { useSelector } from "react-redux";
 
 const Navbar = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
-
+  const menuOpen = useSelector((state) => state.menu.menuOpen);
   return (
-    <nav className="fixed left-[50%] z-20 mx-auto mt-4 flex w-full max-w-[1300px] -translate-x-[50%] gap-4 px-4">
-      <div className="border-orange mx-auto flex w-full max-w-[1200px] items-center justify-between rounded-l-full rounded-r-full border-[0.5px] bg-black p-6">
+    <nav className="max-w-[1300px] mx-auto w-full  px-4 fixed left-[50%] -translate-x-[50%] z-20 flex gap-4 mt-2">
+      <div className="flex justify-between w-full max-w-[1200px] mx-auto  bg-black items-center p-6 rounded-r-full rounded-l-full border-orange border-[0.5px] ">
         <NavbarLogo />
-        <div className={`${menuOpen? "sm:block" : "sm:hidden"} lg:block`}>
+        <div className={`${menuOpen ? "sm:block" : "sm:hidden"} lg:block`}>
           <NavbarLinks />
         </div>
+
         <NavbarBtn />
       </div>
-      <div className="border-orange flex items-center rounded-full border-[0.5px] bg-black p-6 sm:block lg:hidden">
-        <button
-          className="border-orange rounded-full border p-3 text-2xl text-white"
-          onClick={toggleMenu}
-        >
-          <GiHamburgerMenu />
-        </button>
+      <div className="flex lg:hidden sm:block p-6 bg-black items-center justify-center rounded-full  border-orange border-[0.5px] ">
+        <NavbarToggler />
       </div>
     </nav>
   );

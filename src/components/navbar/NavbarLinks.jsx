@@ -9,7 +9,7 @@ const NavbarLinks = () => {
     { link: "Contact", section: "contact" },
   ];
   return (
-    <ul className="lg:text-md sm:bg-cyan/30 left-[50%] flex -translate-x-[50%] gap-4 py-4 text-center font-bold text-white backdrop-blur-lg sm:absolute sm:top-[120%] sm:w-full sm:flex-col sm:text-xl lg:relative lg:flex-row lg:bg-black">
+    <ul className="flex lg:flex-row sm:flex-col gap-6 text-white font-body lg:relative sm:absolute sm:top-[120%] text-center left-[50%] -translate-x-[50%] lg:text-md sm:text-xl sm:bg-cyan/30 backdrop-blur-lg lg:bg-black sm:w-full py-4">
       {links.map((link, index) => {
         return (
           <li key={index} className="group">
@@ -19,11 +19,11 @@ const NavbarLinks = () => {
               spy={true}
               duration={500}
               offset={-130}
-              className="hover:text-cyan cursor-pointer text-white transition-all duration-500"
+              className="cursor-pointer text-white hover:text-cyan transition-all duration-500"
             >
               {link.link}
             </Link>
-            <div className="bg-cyan mx-auto h-[1px] w-0 transition-all duration-500 group-hover:w-full"></div>
+            <div className="mx-auto bg-cyan w-0 group-hover:w-full h-[1px] transition-all duration-500"></div>
           </li>
         );
       })}
