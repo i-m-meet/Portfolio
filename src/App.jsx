@@ -1,4 +1,5 @@
 import About from "./components/about/About";
+import ContactMe from "./components/contact-me/ContactMe";
 import Experience from "./components/experience/Experience";
 import HelperSection from "./components/HelperSection";
 import Hero from "./components/heroSection/Hero";
@@ -19,6 +20,7 @@ const App = () =>{
       <SubSkills/>
       <Experience/>
       <Projects/>
+      <ContactMe/>
       <HelperSection/>
     </main>
   );
