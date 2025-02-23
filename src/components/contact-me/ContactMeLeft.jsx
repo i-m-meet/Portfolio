@@ -3,7 +3,7 @@ import ContactForm from "./ContactForm";
 const ContactMeLeft = () => {
   return (
     <div>
-      <div>
+      <div className="flex w-full flex-col gap-8">
         <h2 className="text-orange mb-4 text-3xl">Get in Touch</h2>
         <p className="text-white">
           Feel free to reach out if you'd like to collaborate
@@ -11,7 +11,7 @@ const ContactMeLeft = () => {
           you are just few clicks away!
         </p>
       </div>
-      <ContactForm/>
+      <ContactForm />
     </div>
   );
 };
